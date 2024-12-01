@@ -1,0 +1,2412 @@
+{
+  "words": [
+    {
+      "arabicWord": "اللَّه",
+      "englishMeaning": "Allah",
+      "transliteration": "Allah",
+      "rootWord": "ا-ل-ه",
+      "context": "Al-Fatihah 1:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رَبّ",
+      "englishMeaning": "Lord",
+      "transliteration": "Rabb",
+      "rootWord": "ر-ب-ب",
+      "context": "Al-Fatihah 1:2",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رَحْمَن",
+      "englishMeaning": "Most Merciful",
+      "transliteration": "Rahman",
+      "rootWord": "ر-ح-م",
+      "context": "Al-Fatihah 1:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قَالَ",
+      "englishMeaning": "He said",
+      "transliteration": "Qaala",
+      "rootWord": "ق-و-ل",
+      "context": "Al-Baqarah 2:30",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "كِتَاب",
+      "englishMeaning": "Book",
+      "transliteration": "Kitab",
+      "rootWord": "ك-ت-ب",
+      "context": "Al-Baqarah 2:2",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَاس",
+      "englishMeaning": "People",
+      "transliteration": "Naas",
+      "rootWord": "ن-و-س",
+      "context": "Al-Baqarah 2:21",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "آمَنَ",
+      "englishMeaning": "Believe",
+      "transliteration": "Aamana",
+      "rootWord": "ا-م-ن",
+      "context": "Al-Baqarah 2:3",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَمِلَ",
+      "englishMeaning": "Do (action)",
+      "transliteration": "Amila",
+      "rootWord": "ع-م-ل",
+      "context": "Al-Baqarah 2:25",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "يَوْم",
+      "englishMeaning": "Day",
+      "transliteration": "Yawm",
+      "rootWord": "ي-و-م",
+      "context": "Al-Fatihah 1:4",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سَمَاء",
+      "englishMeaning": "Sky/Heaven",
+      "transliteration": "Samaa",
+      "rootWord": "س-م-و",
+      "context": "Al-Baqarah 2:22",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَرْض",
+      "englishMeaning": "Earth",
+      "transliteration": "Ard",
+      "rootWord": "ا-ر-ض",
+      "context": "Al-Baqarah 2:11",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "جَنَّة",
+      "englishMeaning": "Paradise/Garden",
+      "transliteration": "Jannah",
+      "rootWord": "ج-ن-ن",
+      "context": "Al-Baqarah 2:35",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَار",
+      "englishMeaning": "Fire",
+      "transliteration": "Naar",
+      "rootWord": "ن-و-ر",
+      "context": "Al-Baqarah 2:24",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَلِيم",
+      "englishMeaning": "All-Knowing",
+      "transliteration": "Aleem",
+      "rootWord": "ع-ل-م",
+      "context": "Al-Baqarah 2:32",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَكِيم",
+      "englishMeaning": "All-Wise",
+      "transliteration": "Hakeem",
+      "rootWord": "ح-ك-م",
+      "context": "Al-Baqarah 2:32",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَذَاب",
+      "englishMeaning": "Punishment",
+      "transliteration": "Adhab",
+      "rootWord": "ع-ذ-ب",
+      "context": "Al-Baqarah 2:7",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رَسُول",
+      "englishMeaning": "Messenger",
+      "transliteration": "Rasool",
+      "rootWord": "ر-س-ل",
+      "context": "Al-Baqarah 2:101",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَبِيّ",
+      "englishMeaning": "Prophet",
+      "transliteration": "Nabi",
+      "rootWord": "ن-ب-ا",
+      "context": "Al-Baqarah 2:247",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَلَك",
+      "englishMeaning": "Angel",
+      "transliteration": "Malak",
+      "rootWord": "م-ل-ك",
+      "context": "Al-Baqarah 2:30",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "شَيْطَان",
+      "englishMeaning": "Satan",
+      "transliteration": "Shaytan",
+      "rootWord": "ش-ط-ن",
+      "context": "Al-Baqarah 2:36",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "صَلَاة",
+      "englishMeaning": "Prayer",
+      "transliteration": "Salah",
+      "rootWord": "ص-ل-و",
+      "context": "Al-Baqarah 2:3",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "زَكَاة",
+      "englishMeaning": "Charity",
+      "transliteration": "Zakah",
+      "rootWord": "ز-ك-و",
+      "context": "Al-Baqarah 2:43",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَقّ",
+      "englishMeaning": "Truth",
+      "transliteration": "Haqq",
+      "rootWord": "ح-ق-ق",
+      "context": "Al-Baqarah 2:26",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خَيْر",
+      "englishMeaning": "Good/Better",
+      "transliteration": "Khayr",
+      "rootWord": "خ-ي-ر",
+      "context": "Al-Baqarah 2:54",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عِلْم",
+      "englishMeaning": "Knowledge",
+      "transliteration": "Ilm",
+      "rootWord": "ع-ل-م",
+      "context": "Al-Baqarah 2:32",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قُلُوب",
+      "englishMeaning": "Hearts",
+      "transliteration": "Quloob",
+      "rootWord": "ق-ل-ب",
+      "context": "Al-Baqarah 2:7",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نُور",
+      "englishMeaning": "Light",
+      "transliteration": "Noor",
+      "rootWord": "ن-و-ر",
+      "context": "Al-Baqarah 2:17",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "هُدًى",
+      "englishMeaning": "Guidance",
+      "transliteration": "Huda",
+      "rootWord": "ه-د-ي",
+      "context": "Al-Baqarah 2:2",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "كَفَرَ",
+      "englishMeaning": "Disbelieve",
+      "transliteration": "Kafara",
+      "rootWord": "ك-ف-ر",
+      "context": "Al-Baqarah 2:6",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ظَلَمَ",
+      "englishMeaning": "Wrong/Oppress",
+      "transliteration": "Zalama",
+      "rootWord": "ظ-ل-م",
+      "context": "Al-Baqarah 2:57",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَبَدَ",
+      "englishMeaning": "Worship",
+      "transliteration": "Abada",
+      "rootWord": "ع-ب-د",
+      "context": "Al-Fatihah 1:5",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ذَكَرَ",
+      "englishMeaning": "Remember",
+      "transliteration": "Dhakara",
+      "rootWord": "ذ-ك-ر",
+      "context": "Al-Baqarah 2:40",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سَمِعَ",
+      "englishMeaning": "Hear",
+      "transliteration": "Samia",
+      "rootWord": "س-م-ع",
+      "context": "Al-Baqarah 2:93",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "بََر",
+      "englishMeaning": "Sight",
+      "transliteration": "Basar",
+      "rootWord": "ب-ص-ر",
+      "context": "Al-Baqarah 2:7",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَظِيم",
+      "englishMeaning": "Great/Magnificent",
+      "transliteration": "Azeem",
+      "rootWord": "ع-ظ-م",
+      "context": "Al-Baqarah 2:7",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "كَرِيم",
+      "englishMeaning": "Noble/Generous",
+      "transliteration": "Kareem",
+      "rootWord": "ك-ر-م",
+      "context": "Al-Infitar 82:6",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "صَبَرَ",
+      "englishMeaning": "Be Patient",
+      "transliteration": "Sabara",
+      "rootWord": "ص-ب-ر",
+      "context": "Al-Baqarah 2:153",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "شَكَرَ",
+      "englishMeaning": "Be Grateful",
+      "transliteration": "Shakara",
+      "rootWord": "ش-ك-ر",
+      "context": "Al-Baqarah 2:52",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "تَوَكَّلَ",
+      "englishMeaning": "Trust/Rely upon",
+      "transliteration": "Tawakkala",
+      "rootWord": "و-ك-ل",
+      "context": "Al-Imran 3:159",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "غَفَرَ",
+      "englishMeaning": "Forgive",
+      "transliteration": "Ghafara",
+      "rootWord": "غ-ف-ر",
+      "context": "Al-Baqarah 2:58",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مُؤْمِن",
+      "englishMeaning": "Believer",
+      "transliteration": "Mu'min",
+      "rootWord": "ا-م-ن",
+      "context": "Al-Baqarah 2:221",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "كَافِر",
+      "englishMeaning": "Disbeliever",
+      "transliteration": "Kafir",
+      "rootWord": "ك-ف-ر",
+      "context": "Al-Baqarah 2:24",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "دُنْيَا",
+      "englishMeaning": "World",
+      "transliteration": "Dunya",
+      "rootWord": "د-ن-و",
+      "context": "Al-Baqarah 2:85",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "آخِرَة",
+      "englishMeaning": "Hereafter",
+      "transliteration": "Akhirah",
+      "rootWord": "ا-خ-ر",
+      "context": "Al-Baqarah 2:86",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "جَزَاء",
+      "englishMeaning": "Reward/Recompense",
+      "transliteration": "Jazaa",
+      "rootWord": "ج-ز-ي",
+      "context": "Al-Baqarah 2:85",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَسَن",
+      "englishMeaning": "Good",
+      "transliteration": "Hasan",
+      "rootWord": "ح-س-ن",
+      "context": "Al-Baqarah 2:83",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سُوء",
+      "englishMeaning": "Evil/Bad",
+      "transliteration": "Soo",
+      "rootWord": "س-و-ا",
+      "context": "Al-Baqarah 2:49",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "صِرَاط",
+      "englishMeaning": "Path",
+      "transliteration": "Siraat",
+      "rootWord": "ص-ر-ط",
+      "context": "Al-Fatihah 1:6",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مُسْتَقِيم",
+      "englishMeaning": "Straight",
+      "transliteration": "Mustaqeem",
+      "rootWord": "ق-و-م",
+      "context": "Al-Fatihah 1:6",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَفْس",
+      "englishMeaning": "Soul/Self",
+      "transliteration": "Nafs",
+      "rootWord": "ن-ف-س",
+      "context": "Al-Baqarah 2:48",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قَلْب",
+      "englishMeaning": "Heart",
+      "transliteration": "Qalb",
+      "rootWord": "ق-ل-ب",
+      "context": "Al-Baqarah 2:7",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَيْن",
+      "englishMeaning": "Eye",
+      "transliteration": "Ayn",
+      "rootWord": "ع-ي-ن",
+      "context": "Al-Baqarah 2:60",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "وَجْه",
+      "englishMeaning": "Face",
+      "transliteration": "Wajh",
+      "rootWord": "و-ج-ه",
+      "context": "Al-Baqarah 2:115",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "يَد",
+      "englishMeaning": "Hand",
+      "transliteration": "Yad",
+      "rootWord": "ي-د-ي",
+      "context": "Al-Baqarah 2:79",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَجْر",
+      "englishMeaning": "Reward",
+      "transliteration": "Ajr",
+      "rootWord": "ا-ج-ر",
+      "context": "Al-Baqarah 2:62",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ذَنْب",
+      "englishMeaning": "Sin",
+      "transliteration": "Dhanb",
+      "rootWord": "ذ-ن-ب",
+      "context": "Al-Baqarah 2:58",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "تَوْبَة",
+      "englishMeaning": "Repentance",
+      "transliteration": "Tawbah",
+      "rootWord": "ت-و-ب",
+      "context": "Al-Baqarah 2:54",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رَحْمَة",
+      "englishMeaning": "Mercy",
+      "transliteration": "Rahmah",
+      "rootWord": "ر-ح-م",
+      "context": "Al-Baqarah 2:157",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَغْفِرَة",
+      "englishMeaning": "Forgiveness",
+      "transliteration": "Maghfirah",
+      "rootWord": "غ-ف-ر",
+      "context": "Al-Baqarah 2:175",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عِبَاد",
+      "englishMeaning": "Servants/Worshippers",
+      "transliteration": "Ibaad",
+      "rootWord": "ع-ب-د",
+      "context": "Al-Baqarah 2:90",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَاء",
+      "englishMeaning": "Water",
+      "transliteration": "Maa",
+      "rootWord": "م-و-ه",
+      "context": "Al-Baqarah 2:22",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "شَمْس",
+      "englishMeaning": "Sun",
+      "transliteration": "Shams",
+      "rootWord": "ش-م-س",
+      "context": "Al-Baqarah 2:258",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قَمَر",
+      "englishMeaning": "Moon",
+      "transliteration": "Qamar",
+      "rootWord": "ق-م-ر",
+      "context": "Yunus 10:5",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "لَيْل",
+      "englishMeaning": "Night",
+      "transliteration": "Layl",
+      "rootWord": "ل-ي-ل",
+      "context": "Al-Baqarah 2:164",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَهَار",
+      "englishMeaning": "Day",
+      "transliteration": "Nahaar",
+      "rootWord": "ن-ه-ر",
+      "context": "Al-Baqarah 2:164",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَكَلَ",
+      "englishMeaning": "Eat",
+      "transliteration": "Akala",
+      "rootWord": "ا-ك-ل",
+      "context": "Al-Baqarah 2:35",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "شَرِبَ",
+      "englishMeaning": "Drink",
+      "transliteration": "Shariba",
+      "rootWord": "ش-ر-ب",
+      "context": "Al-Baqarah 2:60",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَلِمَ",
+      "englishMeaning": "Know",
+      "transliteration": "Alima",
+      "rootWord": "ع-ل-م",
+      "context": "Al-Baqarah 2:60",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَهِمَ",
+      "englishMeaning": "Understand",
+      "transliteration": "Fahima",
+      "rootWord": "ف-ه-م",
+      "context": "Al-Anbiya 21:79",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "كَثِير",
+      "englishMeaning": "Much/Many",
+      "transliteration": "Katheer",
+      "rootWord": "ك-ث-ر",
+      "context": "Al-Baqarah 2:26",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قَلِيل",
+      "englishMeaning": "Little/Few",
+      "transliteration": "Qaleel",
+      "rootWord": "ق-ل-ل",
+      "context": "Al-Baqarah 2:41",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "كَبِير",
+      "englishMeaning": "Big/Great",
+      "transliteration": "Kabeer",
+      "rootWord": "ك-ب-ر",
+      "context": "Al-Baqarah 2:219",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "صَغِير",
+      "englishMeaning": "Small",
+      "transliteration": "Sagheer",
+      "rootWord": "ص-غ-ر",
+      "context": "Al-Kahf 18:49",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَوَّل",
+      "englishMeaning": "First",
+      "transliteration": "Awwal",
+      "rootWord": "ا-و-ل",
+      "context": "Al-Baqarah 2:41",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "آخِر",
+      "englishMeaning": "Last",
+      "transliteration": "Aakhir",
+      "rootWord": "ا-خ-ر",
+      "context": "Al-Hadid 57:3",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "جَاءَ",
+      "englishMeaning": "Come",
+      "transliteration": "Jaa'a",
+      "rootWord": "ج-ي-ا",
+      "context": "Al-Baqarah 2:89",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ذَهَبَ",
+      "englishMeaning": "Go",
+      "transliteration": "Dhahaba",
+      "rootWord": "ذ-ه-ب",
+      "context": "Al-Baqarah 2:17",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "وَجَدَ",
+      "englishMeaning": "Find",
+      "transliteration": "Wajada",
+      "rootWord": "و-ج-د",
+      "context": "Al-Baqarah 2:96",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَقَدَ",
+      "englishMeaning": "Lose",
+      "transliteration": "Faqada",
+      "rootWord": "ف-ق-د",
+      "context": "Yusuf 12:71",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَتَحَ",
+      "englishMeaning": "Open",
+      "transliteration": "Fataha",
+      "rootWord": "ف-ت-ح",
+      "context": "Al-Baqarah 2:76",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "غَفُور",
+      "englishMeaning": "Most Forgiving",
+      "transliteration": "Ghafoor",
+      "rootWord": "غ-ف-ر",
+      "context": "Al-Baqarah 2:173",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رَحِيم",
+      "englishMeaning": "Most Merciful",
+      "transliteration": "Raheem",
+      "rootWord": "ر-ح-م",
+      "context": "Al-Baqarah 2:143",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سَمِيع",
+      "englishMeaning": "All-Hearing",
+      "transliteration": "Samee",
+      "rootWord": "س-م-ع",
+      "context": "Al-Baqarah 2:127",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "بَصِير",
+      "englishMeaning": "All-Seeing",
+      "transliteration": "Baseer",
+      "rootWord": "ب-ص-ر",
+      "context": "Al-Baqarah 2:96",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قَدِير",
+      "englishMeaning": "All-Powerful",
+      "transliteration": "Qadeer",
+      "rootWord": "ق-د-ر",
+      "context": "Al-Baqarah 2:20",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَلِك",
+      "englishMeaning": "King/Sovereign",
+      "transliteration": "Malik",
+      "rootWord": "م-ل-ك",
+      "context": "Al-Fatihah 1:4",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قُدُّوس",
+      "englishMeaning": "Holy",
+      "transliteration": "Quddus",
+      "rootWord": "ق-د-س",
+      "context": "Al-Hashr 59:23",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سَلَام",
+      "englishMeaning": "Peace",
+      "transliteration": "Salam",
+      "rootWord": "س-ل-م",
+      "context": "Al-Hashr 59:23",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مُؤْمِن",
+      "englishMeaning": "Guardian of Faith",
+      "transliteration": "Mu'min",
+      "rootWord": "ا-م-ن",
+      "context": "Al-Hashr 59:23",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مُهَيْمِن",
+      "englishMeaning": "Protector",
+      "transliteration": "Muhaymin",
+      "rootWord": "ه-م-ن",
+      "context": "Al-Hashr 59:23",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَزِيز",
+      "englishMeaning": "Mighty",
+      "transliteration": "Azeez",
+      "rootWord": "ع-ز-ز",
+      "context": "Al-Hashr 59:23",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "جَبَّار",
+      "englishMeaning": "Compeller",
+      "transliteration": "Jabbar",
+      "rootWord": "ج-ب-ر",
+      "context": "Al-Hashr 59:23",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مُتَكَبِّر",
+      "englishMeaning": "Supreme",
+      "transliteration": "Mutakabbir",
+      "rootWord": "ك-ب-ر",
+      "context": "Al-Hashr 59:23",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خَالِق",
+      "englishMeaning": "Creator",
+      "transliteration": "Khaliq",
+      "rootWord": "خ-ل-ق",
+      "context": "Al-Hashr 59:24",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "بَارِئ",
+      "englishMeaning": "Maker",
+      "transliteration": "Bari",
+      "rootWord": "ب-ر-ا",
+      "context": "Al-Hashr 59:24",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مُصَوِّر",
+      "englishMeaning": "Fashioner",
+      "transliteration": "Musawwir",
+      "rootWord": "ص-و-ر",
+      "context": "Al-Hashr 59:24",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "تَوَّاب",
+      "englishMeaning": "Acceptor of Repentance",
+      "transliteration": "Tawwab",
+      "rootWord": "ت-و-ب",
+      "context": "Al-Baqarah 2:37",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَيّ",
+      "englishMeaning": "Ever-Living",
+      "transliteration": "Hayy",
+      "rootWord": "ح-ي-ي",
+      "context": "Al-Baqarah 2:255",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قَيُّوم",
+      "englishMeaning": "Self-Subsisting",
+      "transliteration": "Qayyum",
+      "rootWord": "ق-و-م",
+      "context": "Al-Baqarah 2:255",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "وَاحِد",
+      "englishMeaning": "One",
+      "transliteration": "Wahid",
+      "rootWord": "و-ح-د",
+      "context": "Al-Baqarah 2:163",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَحَد",
+      "englishMeaning": "The One",
+      "transliteration": "Ahad",
+      "rootWord": "ا-ح-د",
+      "context": "Al-Ikhlas 112:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "صَمَد",
+      "englishMeaning": "The Eternal",
+      "transliteration": "Samad",
+      "rootWord": "ص-م-د",
+      "context": "Al-Ikhlas 112:2",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نُور",
+      "englishMeaning": "Light",
+      "transliteration": "Nur",
+      "rootWord": "ن-و-ر",
+      "context": "An-Nur 24:35",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "وَكِيل",
+      "englishMeaning": "Trustee",
+      "transliteration": "Wakeel",
+      "rootWord": "و-ك-ل",
+      "context": "Al-An'am 6:102",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَفِيظ",
+      "englishMeaning": "Guardian",
+      "transliteration": "Hafeez",
+      "rootWord": "ح-ف-ظ",
+      "context": "Hud 11:57",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "شَهِيد",
+      "englishMeaning": "Witness",
+      "transliteration": "Shaheed",
+      "rootWord": "ش-ه-د",
+      "context": "Al-Baqarah 2:282",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَسِيب",
+      "englishMeaning": "Reckoner",
+      "transliteration": "Haseeb",
+      "rootWord": "ح-س-ب",
+      "context": "An-Nisa 4:6",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رَقِيب",
+      "englishMeaning": "Watchful",
+      "transliteration": "Raqeeb",
+      "rootWord": "ر-ق-ب",
+      "context": "An-Nisa 4:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مُجِيب",
+      "englishMeaning": "Responsive",
+      "transliteration": "Mujeeb",
+      "rootWord": "ج-و-ب",
+      "context": "Hud 11:61",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "وَدُود",
+      "englishMeaning": "Loving",
+      "transliteration": "Wadood",
+      "rootWord": "و-د-د",
+      "context": "Hud 11:90",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَجِيد",
+      "englishMeaning": "Glorious",
+      "transliteration": "Majeed",
+      "rootWord": "م-ج-د",
+      "context": "Hud 11:73",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَب",
+      "englishMeaning": "Father",
+      "transliteration": "Ab",
+      "rootWord": "ا-ب-و",
+      "context": "Yusuf 12:4",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أُمّ",
+      "englishMeaning": "Mother",
+      "transliteration": "Umm",
+      "rootWord": "ا-م-م",
+      "context": "Al-Qasas 28:7",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ابْن",
+      "englishMeaning": "Son",
+      "transliteration": "Ibn",
+      "rootWord": "ب-ن-ي",
+      "context": "Maryam 19:34",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "بِنْت",
+      "englishMeaning": "Daughter",
+      "transliteration": "Bint",
+      "rootWord": "ب-ن-ت",
+      "context": "Al-Qasas 28:27",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَخ",
+      "englishMeaning": "Brother",
+      "transliteration": "Akh",
+      "rootWord": "ا-خ-و",
+      "context": "Yusuf 12:8",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أُخْت",
+      "englishMeaning": "Sister",
+      "transliteration": "Ukht",
+      "rootWord": "ا-خ-و",
+      "context": "Al-Qasas 28:11",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "زَوْج",
+      "englishMeaning": "Spouse",
+      "transliteration": "Zawj",
+      "rootWord": "ز-و-ج",
+      "context": "Al-Baqarah 2:35",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "وَاحِد",
+      "englishMeaning": "One",
+      "transliteration": "Wahid",
+      "rootWord": "و-ح-د",
+      "context": "Al-Baqarah 2:163",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "اثْنَان",
+      "englishMeaning": "Two",
+      "transliteration": "Ithnan",
+      "rootWord": "ث-ن-ي",
+      "context": "An-Nahl 16:51",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ثَلَاثَة",
+      "englishMeaning": "Three",
+      "transliteration": "Thalatha",
+      "rootWord": "ث-ل-ث",
+      "context": "Al-Baqarah 2:196",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَرْبَعَة",
+      "englishMeaning": "Four",
+      "transliteration": "Arba'ah",
+      "rootWord": "ر-ب-ع",
+      "context": "At-Tawbah 9:2",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خَمْسَة",
+      "englishMeaning": "Five",
+      "transliteration": "Khamsah",
+      "rootWord": "خ-م-س",
+      "context": "Al-Kahf 18:22",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَبْيَض",
+      "englishMeaning": "White",
+      "transliteration": "Abyad",
+      "rootWord": "ب-ي-ض",
+      "context": "Al-A'raf 7:108",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَسْوَد",
+      "englishMeaning": "Black",
+      "transliteration": "Aswad",
+      "rootWord": "س-و-د",
+      "context": "Al-Baqarah 2:187",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَخْضَر",
+      "englishMeaning": "Green",
+      "transliteration": "Akhdar",
+      "rootWord": "خ-ض-ر",
+      "context": "Al-Hajj 22:63",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَحْمَر",
+      "englishMeaning": "Red",
+      "transliteration": "Ahmar",
+      "rootWord": "ح-م-ر",
+      "context": "Fatir 35:27",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "جَبَل",
+      "englishMeaning": "Mountain",
+      "transliteration": "Jabal",
+      "rootWord": "ج-ب-ل",
+      "context": "Al-A'raf 7:143",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "بَحْر",
+      "englishMeaning": "Sea",
+      "transliteration": "Bahr",
+      "rootWord": "ب-ح-ر",
+      "context": "Al-Baqarah 2:50",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَهْر",
+      "englishMeaning": "River",
+      "transliteration": "Nahr",
+      "rootWord": "ن-ه-ر",
+      "context": "Ibrahim 14:32",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "شَجَر",
+      "englishMeaning": "Tree",
+      "transliteration": "Shajar",
+      "rootWord": "ش-ج-ر",
+      "context": "An-Nahl 16:10",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رِيح",
+      "englishMeaning": "Wind",
+      "transliteration": "Reeh",
+      "rootWord": "ر-و-ح",
+      "context": "Al-Baqarah 2:164",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَطَر",
+      "englishMeaning": "Rain",
+      "transliteration": "Matar",
+      "rootWord": "م-ط-ر",
+      "context": "Al-A'raf 7:84",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سَحَاب",
+      "englishMeaning": "Cloud",
+      "transliteration": "Sahaab",
+      "rootWord": "س-ح-ب",
+      "context": "Al-Baqarah 2:164",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "بَرْق",
+      "englishMeaning": "Lightning",
+      "transliteration": "Barq",
+      "rootWord": "ب-ر-ق",
+      "context": "Al-Baqarah 2:19",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رَعْد",
+      "englishMeaning": "Thunder",
+      "transliteration": "Ra'd",
+      "rootWord": "ر-ع-د",
+      "context": "Al-Baqarah 2:19",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "صَبَاح",
+      "englishMeaning": "Morning",
+      "transliteration": "Sabaah",
+      "rootWord": "ص-ب-ح",
+      "context": "As-Saffat 37:177",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَسَاء",
+      "englishMeaning": "Evening",
+      "transliteration": "Masaa",
+      "rootWord": "م-س-و",
+      "context": "Ar-Rum 30:17",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "شَهْر",
+      "englishMeaning": "Month",
+      "transliteration": "Shahr",
+      "rootWord": "ش-ه-ر",
+      "context": "Al-Baqarah 2:185",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سَنَة",
+      "englishMeaning": "Year",
+      "transliteration": "Sanah",
+      "rootWord": "س-ن-و",
+      "context": "Al-Baqarah 2:96",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَام",
+      "englishMeaning": "Year",
+      "transliteration": "Aam",
+      "rootWord": "ع-و-م",
+      "context": "Al-Baqarah 2:259",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "زَمَن",
+      "englishMeaning": "Time",
+      "transliteration": "Zaman",
+      "rootWord": "ز-م-ن",
+      "context": "Yusuf 12:35",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "وَقْت",
+      "englishMeaning": "Time/Appointed Time",
+      "transliteration": "Waqt",
+      "rootWord": "و-ق-ت",
+      "context": "Al-Hijr 15:38",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَجْر",
+      "englishMeaning": "Dawn",
+      "transliteration": "Fajr",
+      "rootWord": "ف-ج-ر",
+      "context": "Al-Fajr 89:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ظُهْر",
+      "englishMeaning": "Noon",
+      "transliteration": "Zuhr",
+      "rootWord": "ظ-ه-ر",
+      "context": "An-Nur 24:58",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَصْر",
+      "englishMeaning": "Afternoon",
+      "transliteration": "Asr",
+      "rootWord": "ع-ص-ر",
+      "context": "Al-Asr 103:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَغْرِب",
+      "englishMeaning": "Sunset",
+      "transliteration": "Maghrib",
+      "rootWord": "غ-ر-ب",
+      "context": "Al-Baqarah 2:115",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عِشَاء",
+      "englishMeaning": "Night Prayer",
+      "transliteration": "Isha",
+      "rootWord": "ع-ش-و",
+      "context": "An-Nur 24:58",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَرْض",
+      "englishMeaning": "Land/Earth",
+      "transliteration": "Ard",
+      "rootWord": "ا-ر-ض",
+      "context": "Al-Baqarah 2:11",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "تُرَاب",
+      "englishMeaning": "Dust/Soil",
+      "transliteration": "Turab",
+      "rootWord": "ت-ر-ب",
+      "context": "Al-Baqarah 2:264",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَجَر",
+      "englishMeaning": "Stone",
+      "transliteration": "Hajar",
+      "rootWord": "ح-ج-ر",
+      "context": "Al-Baqarah 2:74",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَرَح",
+      "englishMeaning": "Joy/Happiness",
+      "transliteration": "Farah",
+      "rootWord": "ف-ر-ح",
+      "context": "At-Tawbah 9:81",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حُزْن",
+      "englishMeaning": "Sadness",
+      "transliteration": "Huzn",
+      "rootWord": "ح-ز-ن",
+      "context": "Yusuf 12:84",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خَوْف",
+      "englishMeaning": "Fear",
+      "transliteration": "Khawf",
+      "rootWord": "خ-و-ف",
+      "context": "Al-Baqarah 2:38",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "غَضَب",
+      "englishMeaning": "Anger",
+      "transliteration": "Ghadab",
+      "rootWord": "غ-ض-ب",
+      "context": "Al-Fatihah 1:7",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حُبّ",
+      "englishMeaning": "Love",
+      "transliteration": "Hubb",
+      "rootWord": "ح-ب-ب",
+      "context": "Al-Baqarah 2:165",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَنَا",
+      "englishMeaning": "I",
+      "transliteration": "Ana",
+      "rootWord": null,
+      "context": "Al-Baqarah 2:30",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَحْنُ",
+      "englishMeaning": "We",
+      "transliteration": "Nahnu",
+      "rootWord": null,
+      "context": "Al-Fatihah 1:5",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَنْتَ",
+      "englishMeaning": "You (masculine)",
+      "transliteration": "Anta",
+      "rootWord": null,
+      "context": "Al-Baqarah 2:32",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "هُوَ",
+      "englishMeaning": "He",
+      "transliteration": "Huwa",
+      "rootWord": null,
+      "context": "Al-Ikhlas 112:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "هِيَ",
+      "englishMeaning": "She",
+      "transliteration": "Hiya",
+      "rootWord": null,
+      "context": "Al-Baqarah 2:68",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فِي",
+      "englishMeaning": "In",
+      "transliteration": "Fee",
+      "rootWord": null,
+      "context": "Al-Fatihah 1:6",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَلَى",
+      "englishMeaning": "Upon/Over",
+      "transliteration": "Ala",
+      "rootWord": null,
+      "context": "Al-Fatihah 1:7",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مِنْ",
+      "englishMeaning": "From",
+      "transliteration": "Min",
+      "rootWord": null,
+      "context": "An-Nas 114:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "إِلَى",
+      "englishMeaning": "To/Towards",
+      "transliteration": "Ila",
+      "rootWord": null,
+      "context": "Al-Baqarah 2:14",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَعَ",
+      "englishMeaning": "With",
+      "transliteration": "Ma'a",
+      "rootWord": null,
+      "context": "At-Tawbah 9:40",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "صَوْم",
+      "englishMeaning": "Fasting",
+      "transliteration": "Sawm",
+      "rootWord": "ص-و-م",
+      "context": "Al-Baqarah 2:183",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَجّ",
+      "englishMeaning": "Pilgrimage",
+      "transliteration": "Hajj",
+      "rootWord": "ح-ج-ج",
+      "context": "Al-Baqarah 2:196",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "جِهَاد",
+      "englishMeaning": "Struggle",
+      "transliteration": "Jihad",
+      "rootWord": "ج-ه-د",
+      "context": "Al-Hajj 22:78",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "دُعَاء",
+      "englishMeaning": "Supplication",
+      "transliteration": "Du'a",
+      "rootWord": "د-ع-و",
+      "context": "Al-Baqarah 2:186",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ذِكْر",
+      "englishMeaning": "Remembrance",
+      "transliteration": "Dhikr",
+      "rootWord": "ذ-ك-ر",
+      "context": "Al-Baqarah 2:152",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "شُكْر",
+      "englishMeaning": "Gratitude",
+      "transliteration": "Shukr",
+      "rootWord": "ش-ك-ر",
+      "context": "Al-Baqarah 2:152",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "صَبْر",
+      "englishMeaning": "Patience",
+      "transliteration": "Sabr",
+      "rootWord": "ص-ب-ر",
+      "context": "Al-Baqarah 2:153",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَفْو",
+      "englishMeaning": "Pardon",
+      "transliteration": "Afw",
+      "rootWord": "ع-ف-و",
+      "context": "Al-Baqarah 2:219",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نِعْمَة",
+      "englishMeaning": "Blessing",
+      "transliteration": "Ni'mah",
+      "rootWord": "ن-ع-م",
+      "context": "Al-Fatihah 1:7",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "هدَايَة",
+      "englishMeaning": "Guidance",
+      "transliteration": "Hidayah",
+      "rootWord": "ه-د-ي",
+      "context": "Al-Fatihah 1:6",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "تَابَ",
+      "englishMeaning": "Repent",
+      "transliteration": "Taaba",
+      "rootWord": "ت-و-ب",
+      "context": "Al-Baqarah 2:37",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَصَرَ",
+      "englishMeaning": "Help",
+      "transliteration": "Nasara",
+      "rootWord": "ن-ص-ر",
+      "context": "Al-Baqarah 2:214",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَتَحَ",
+      "englishMeaning": "Open/Conquer",
+      "transliteration": "Fataha",
+      "rootWord": "ف-ت-ح",
+      "context": "Al-Fath 48:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خَلَقَ",
+      "englishMeaning": "Create",
+      "transliteration": "Khalaqa",
+      "rootWord": "خ-ل-ق",
+      "context": "Al-Alaq 96:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رَزَقَ",
+      "englishMeaning": "Provide",
+      "transliteration": "Razaqa",
+      "rootWord": "ر-ز-ق",
+      "context": "Al-Baqarah 2:3",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَدْل",
+      "englishMeaning": "Justice",
+      "transliteration": "Adl",
+      "rootWord": "ع-د-ل",
+      "context": "An-Nahl 16:90",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ظُلْم",
+      "englishMeaning": "Injustice",
+      "transliteration": "Zulm",
+      "rootWord": "ظ-ل-م",
+      "context": "Al-Baqarah 2:279",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَلَال",
+      "englishMeaning": "Permissible",
+      "transliteration": "Halal",
+      "rootWord": "ح-ل-ل",
+      "context": "Al-Baqarah 2:168",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَرَام",
+      "englishMeaning": "Forbidden",
+      "transliteration": "Haram",
+      "rootWord": "ح-ر-م",
+      "context": "Al-Baqarah 2:173",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَرْض",
+      "englishMeaning": "Obligation",
+      "transliteration": "Fard",
+      "rootWord": "ف-ر-ض",
+      "context": "Al-Baqarah 2:197",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سُنَّة",
+      "englishMeaning": "Way/Practice",
+      "transliteration": "Sunnah",
+      "rootWord": "س-ن-ن",
+      "context": "Al-Fath 48:23",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "بِدْعَة",
+      "englishMeaning": "Innovation",
+      "transliteration": "Bidah",
+      "rootWord": "ب-د-ع",
+      "context": "Al-Ahqaf 46:9",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نِيَّة",
+      "englishMeaning": "Intention",
+      "transliteration": "Niyyah",
+      "rootWord": "ن-و-ي",
+      "context": "Al-Bayyinah 98:5",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "إِخْلَاص",
+      "englishMeaning": "Sincerity",
+      "transliteration": "Ikhlas",
+      "rootWord": "خ-ل-ص",
+      "context": "Az-Zumar 39:2",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "تَقْوَى",
+      "englishMeaning": "God-consciousness",
+      "transliteration": "Taqwa",
+      "rootWord": "و-ق-ي",
+      "context": "Al-Baqarah 2:2",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سَجَدَ",
+      "englishMeaning": "Prostrate",
+      "transliteration": "Sajada",
+      "rootWord": "س-ج-د",
+      "context": "Al-Baqarah 2:34",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رَكَعَ",
+      "englishMeaning": "Bow",
+      "transliteration": "Raka'a",
+      "rootWord": "ر-ك-ع",
+      "context": "Al-Baqarah 2:43",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قَرَأَ",
+      "englishMeaning": "Read/Recite",
+      "transliteration": "Qara'a",
+      "rootWord": "ق-ر-",
+      "context": "Al-Alaq 96:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "كَتَبَ",
+      "englishMeaning": "Write",
+      "transliteration": "Kataba",
+      "rootWord": "ك-ت-ب",
+      "context": "Al-Baqarah 2:282",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَمَل",
+      "englishMeaning": "Work/Deed",
+      "transliteration": "Amal",
+      "rootWord": "ع-م-ل",
+      "context": "Al-Baqarah 2:277",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رِجْل",
+      "englishMeaning": "Foot/Leg",
+      "transliteration": "Rijl",
+      "rootWord": "ر-ج-ل",
+      "context": "Al-Maidah 5:6",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رَأْس",
+      "englishMeaning": "Head",
+      "transliteration": "Ra's",
+      "rootWord": "ر-ا-س",
+      "context": "Al-Baqarah 2:196",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "لِسَان",
+      "englishMeaning": "Tongue",
+      "transliteration": "Lisan",
+      "rootWord": "ل-س-ن",
+      "context": "Al-Balad 90:9",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أُذُن",
+      "englishMeaning": "Ear",
+      "transliteration": "Udhun",
+      "rootWord": "ا-ذ-ن",
+      "context": "Al-Baqarah 2:19",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَم",
+      "englishMeaning": "Mouth",
+      "transliteration": "Fam",
+      "rootWord": "ف-م-م",
+      "context": "Al-Imran 3:167",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "صَدْر",
+      "englishMeaning": "Chest",
+      "transliteration": "Sadr",
+      "rootWord": "ص-د-ر",
+      "context": "Al-Nas 114:5",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ظَهْر",
+      "englishMeaning": "Back",
+      "transliteration": "Zahr",
+      "rootWord": "ظ-ه-ر",
+      "context": "Al-An'am 6:31",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "بَطْن",
+      "englishMeaning": "Stomach",
+      "transliteration": "Batn",
+      "rootWord": "ب-ط-ن",
+      "context": "An-Nahl 16:78",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَقْل",
+      "englishMeaning": "Intellect",
+      "transliteration": "Aql",
+      "rootWord": "ع-ق-ل",
+      "context": "Al-Baqarah 2:164",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فِكْر",
+      "englishMeaning": "Thought",
+      "transliteration": "Fikr",
+      "rootWord": "ف-ك-ر",
+      "context": "Al-Muddaththir 74:18",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حِكْمَة",
+      "englishMeaning": "Wisdom",
+      "transliteration": "Hikmah",
+      "rootWord": "ح-ك-م",
+      "context": "Al-Baqarah 2:269",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عِزَّة",
+      "englishMeaning": "Honor/Might",
+      "transliteration": "Izzah",
+      "rootWord": "ع-ز-ز",
+      "context": "Al-Munafiqun 63:8",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ذِلَّة",
+      "englishMeaning": "Humiliation",
+      "transliteration": "Dhillah",
+      "rootWord": "ذ-ل-ل",
+      "context": "Al-Ma'idah 5:54",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قُوَّة",
+      "englishMeaning": "Strength",
+      "transliteration": "Quwwah",
+      "rootWord": "ق-و-ي",
+      "context": "Al-Anfal 8:60",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ضَعْف",
+      "englishMeaning": "Weakness",
+      "transliteration": "Da'f",
+      "rootWord": "ض-ع-ف",
+      "context": "Ar-Rum 30:54",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "غَنِيّ",
+      "englishMeaning": "Rich",
+      "transliteration": "Ghaniyy",
+      "rootWord": "غ-ن-ي",
+      "context": "Al-Baqarah 2:263",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَقِير",
+      "englishMeaning": "Poor",
+      "transliteration": "Faqir",
+      "rootWord": "ف-ق-ر",
+      "context": "Al-Baqarah 2:271",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَيَاة",
+      "englishMeaning": "Life",
+      "transliteration": "Hayah",
+      "rootWord": "ح-ي-ي",
+      "context": "Al-Baqarah 2:179",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَوْت",
+      "englishMeaning": "Death",
+      "transliteration": "Mawt",
+      "rootWord": "م-و-ت",
+      "context": "Al-Baqarah 2:19",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَفَع",
+      "englishMeaning": "Benefit",
+      "transliteration": "Nafa'",
+      "rootWord": "ن-ف-ع",
+      "context": "Al-Baqarah 2:102",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ضَرَّ",
+      "englishMeaning": "Harm",
+      "transliteration": "Darra",
+      "rootWord": "ض-ر-ر",
+      "context": "Al-Baqarah 2:102",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "صَدَقَ",
+      "englishMeaning": "Tell Truth",
+      "transliteration": "Sadaqa",
+      "rootWord": "ص-د-ق",
+      "context": "Al-Baqarah 2:23",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "كَذَبَ",
+      "englishMeaning": "Lie",
+      "transliteration": "Kadhaba",
+      "rootWord": "ك-ذ-ب",
+      "context": "Al-Baqarah 2:10",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "وَعَدَ",
+      "englishMeaning": "Promise",
+      "transliteration": "Wa'ada",
+      "rootWord": "و-ع-د",
+      "context": "Al-Baqarah 2:268",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَامَ",
+      "englishMeaning": "Sleep",
+      "transliteration": "Naama",
+      "rootWord": "ن-و-م",
+      "context": "Al-Baqarah 2:255",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "جَلَسَ",
+      "englishMeaning": "Sit",
+      "transliteration": "Jalasa",
+      "rootWord": "ج-ل-س",
+      "context": "Al-Mujadilah 58:11",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قَامَ",
+      "englishMeaning": "Stand",
+      "transliteration": "Qaama",
+      "rootWord": "ق-و-م",
+      "context": "Al-Baqarah 2:20",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَشَى",
+      "englishMeaning": "Walk",
+      "transliteration": "Masha",
+      "rootWord": "م-ش-ي",
+      "context": "Al-Baqarah 2:20",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "دَخَلَ",
+      "englishMeaning": "Enter",
+      "transliteration": "Dakhala",
+      "rootWord": "د-خ-ل",
+      "context": "Al-Baqarah 2:58",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خَرَجَ",
+      "englishMeaning": "Exit",
+      "transliteration": "Kharaja",
+      "rootWord": "خ-ر-ج",
+      "context": "Al-Baqarah 2:74",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "بَدَأَ",
+      "englishMeaning": "Begin",
+      "transliteration": "Bada'a",
+      "rootWord": "ب-د-ا",
+      "context": "Al-Ankabut 29:19",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "تَمَّ",
+      "englishMeaning": "Complete",
+      "transliteration": "Tamma",
+      "rootWord": "ت-م-م",
+      "context": "Al-Baqarah 2:124",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "طَاعَة",
+      "englishMeaning": "Obedience",
+      "transliteration": "Ta'ah",
+      "rootWord": "ط-و-ع",
+      "context": "An-Nisa 4:81",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عِصْيَان",
+      "englishMeaning": "Disobedience",
+      "transliteration": "Isyan",
+      "rootWord": "ع-ص-ي",
+      "context": "Al-Baqarah 2:93",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَمْر",
+      "englishMeaning": "Command",
+      "transliteration": "Amr",
+      "rootWord": "ا-م-ر",
+      "context": "Al-Baqarah 2:27",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَهْي",
+      "englishMeaning": "Prohibition",
+      "transliteration": "Nahy",
+      "rootWord": "ن-ه-ي",
+      "context": "An-Nahl 16:90",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَرْب",
+      "englishMeaning": "War",
+      "transliteration": "Harb",
+      "rootWord": "ح-ر-ب",
+      "context": "Al-Baqarah 2:279",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سِلْم",
+      "englishMeaning": "Peace",
+      "transliteration": "Silm",
+      "rootWord": "س-ل-م",
+      "context": "Al-Baqarah 2:208",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَوْز",
+      "englishMeaning": "Success",
+      "transliteration": "Fawz",
+      "rootWord": "ف-و-ز",
+      "context": "An-Nisa 4:73",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خُسْر",
+      "englishMeaning": "Loss",
+      "transliteration": "Khusr",
+      "rootWord": "خ-س-ر",
+      "context": "Al-Asr 103:2",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سَأَلَ",
+      "englishMeaning": "Ask",
+      "transliteration": "Sa'ala",
+      "rootWord": "س-ا-ل",
+      "context": "Al-Baqarah 2:186",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَجَابَ",
+      "englishMeaning": "Answer/Respond",
+      "transliteration": "Ajaaba",
+      "rootWord": "ج-و-ب",
+      "context": "Al-Baqarah 2:186",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "تَعَلَّمَ",
+      "englishMeaning": "Learn",
+      "transliteration": "Ta'allama",
+      "rootWord": "ع-ل-م",
+      "context": "Al-Baqarah 2:102",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَلَّمَ",
+      "englishMeaning": "Teach",
+      "transliteration": "Allama",
+      "rootWord": "ع-ل-م",
+      "context": "Al-Baqarah 2:31",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَكَّرَ",
+      "englishMeaning": "Think",
+      "transliteration": "Fakkara",
+      "rootWord": "ف-ك-ر",
+      "context": "Al-Muddaththir 74:18",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "تَدَبَّرَ",
+      "englishMeaning": "Ponder/Reflect",
+      "transliteration": "Tadabbara",
+      "rootWord": "د-ب-ر",
+      "context": "An-Nisa 4:82",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَظَرَ",
+      "englishMeaning": "Look/Observe",
+      "transliteration": "Nazara",
+      "rootWord": "ن-ظ-ر",
+      "context": "Al-Ghashiyah 88:17",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "بَحَثَ",
+      "englishMeaning": "Search",
+      "transliteration": "Bahatha",
+      "rootWord": "ب-ح-ث",
+      "context": "Al-Maidah 5:31",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "وَجَبَ",
+      "englishMeaning": "Become Obligatory",
+      "transliteration": "Wajaba",
+      "rootWord": "و-ج-ب",
+      "context": "Al-Hajj 22:36",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَرُمَ",
+      "englishMeaning": "Become Forbidden",
+      "transliteration": "Haruma",
+      "rootWord": "ح-ر-م",
+      "context": "Al-Maidah 5:96",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "أَمَانَة",
+      "englishMeaning": "Trust",
+      "transliteration": "Amanah",
+      "rootWord": "ا-م-ن",
+      "context": "Al-Ahzab 33:72",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خِيَانَة",
+      "englishMeaning": "Betrayal",
+      "transliteration": "Khiyanah",
+      "rootWord": "خ-و-ن",
+      "context": "Al-Anfal 8:27",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "شَفَاعَة",
+      "englishMeaning": "Intercession",
+      "transliteration": "Shafa'ah",
+      "rootWord": "ش-ف-ع",
+      "context": "Al-Baqarah 2:48",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "بَرَكَة",
+      "englishMeaning": "Blessing",
+      "transliteration": "Barakah",
+      "rootWord": "ب-ر-ك",
+      "context": "Al-A'raf 7:96",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فِتْنَة",
+      "englishMeaning": "Trial/Temptation",
+      "transliteration": "Fitnah",
+      "rootWord": "ف-ت-ن",
+      "context": "Al-Baqarah 2:102",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "جَمَل",
+      "englishMeaning": "Camel",
+      "transliteration": "Jamal",
+      "rootWord": "ج-م-ل",
+      "context": "Al-A'raf 7:40",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خَيْل",
+      "englishMeaning": "Horse",
+      "transliteration": "Khayl",
+      "rootWord": "خ-ي-ل",
+      "context": "An-Nahl 16:8",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَحْل",
+      "englishMeaning": "Bee",
+      "transliteration": "Nahl",
+      "rootWord": "ن-ح-ل",
+      "context": "An-Nahl 16:68",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَمْل",
+      "englishMeaning": "Ant",
+      "transliteration": "Naml",
+      "rootWord": "ن-م-ل",
+      "context": "An-Naml 27:18",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "ذِئْب",
+      "englishMeaning": "Wolf",
+      "transliteration": "Dhi'b",
+      "rootWord": "ذ-ا-ب",
+      "context": "Yusuf 12:13",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "تَمْر",
+      "englishMeaning": "Date",
+      "transliteration": "Tamr",
+      "rootWord": "ت-م-ر",
+      "context": "Maryam 19:25",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "زَيْتُون",
+      "englishMeaning": "Olive",
+      "transliteration": "Zaytoon",
+      "rootWord": "ز-ي-ت",
+      "context": "At-Tin 95:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَسَل",
+      "englishMeaning": "Honey",
+      "transliteration": "Asal",
+      "rootWord": "ع-س-ل",
+      "context": "Muhammad 47:15",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "لَبَن",
+      "englishMeaning": "Milk",
+      "transliteration": "Laban",
+      "rootWord": "ل-ب-ن",
+      "context": "Muhammad 47:15",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خَمْر",
+      "englishMeaning": "Wine",
+      "transliteration": "Khamr",
+      "rootWord": "خ-م-ر",
+      "context": "Al-Baqarah 2:219",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "آدَم",
+      "englishMeaning": "Adam",
+      "transliteration": "Adam",
+      "rootWord": null,
+      "context": "Al-Baqarah 2:31",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نُوح",
+      "englishMeaning": "Noah",
+      "transliteration": "Nuh",
+      "rootWord": null,
+      "context": "Nuh 71:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "إِبْرَاهِيم",
+      "englishMeaning": "Abraham",
+      "transliteration": "Ibrahim",
+      "rootWord": null,
+      "context": "Al-Baqarah 2:124",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مُوسَى",
+      "englishMeaning": "Moses",
+      "transliteration": "Musa",
+      "rootWord": null,
+      "context": "Al-Baqarah 2:51",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عِيسَى",
+      "englishMeaning": "Jesus",
+      "transliteration": "Isa",
+      "rootWord": null,
+      "context": "Al-Baqarah 2:87",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَكَّة",
+      "englishMeaning": "Mecca",
+      "transliteration": "Makkah",
+      "rootWord": null,
+      "context": "Al-Fath 48:24",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَدِينَة",
+      "englishMeaning": "Medina",
+      "transliteration": "Madinah",
+      "rootWord": "م-د-ن",
+      "context": "Al-Munafiqun 63:8",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مِصْر",
+      "englishMeaning": "Egypt",
+      "transliteration": "Misr",
+      "rootWord": null,
+      "context": "Yusuf 12:99",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "كَعْبَة",
+      "englishMeaning": "Kaaba",
+      "transliteration": "Ka'bah",
+      "rootWord": "ك-ع-ب",
+      "context": "Al-Maidah 5:95",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "مَسْجِد",
+      "englishMeaning": "Mosque",
+      "transliteration": "Masjid",
+      "rootWord": "س-ج-د",
+      "context": "Al-Baqarah 2:144",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سَبَّحَ",
+      "englishMeaning": "Glorify",
+      "transliteration": "Sabbaha",
+      "rootWord": "س-ب-ح",
+      "context": "Al-Hadid 57:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَمِدَ",
+      "englishMeaning": "Praise",
+      "transliteration": "Hamida",
+      "rootWord": "ح-م-د",
+      "context": "Al-Fatihah 1:2",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "كَبَّرَ",
+      "englishMeaning": "Magnify",
+      "transliteration": "Kabbara",
+      "rootWord": "ك-ب-ر",
+      "context": "Al-Muddaththir 74:3",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "هَلَّلَ",
+      "englishMeaning": "Say La ilaha illa Allah",
+      "transliteration": "Hallala",
+      "rootWord": "ه-ل-ل",
+      "context": "Various",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "اسْتَغْفَرَ",
+      "englishMeaning": "Seek Forgiveness",
+      "transliteration": "Istaghfara",
+      "rootWord": "غ-ف-ر",
+      "context": "An-Nisa 4:106",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "تَوَضَّأَ",
+      "englishMeaning": "Perform Ablution",
+      "transliteration": "Tawadda'a",
+      "rootWord": "و-ض-ا",
+      "context": "Al-Maidah 5:6",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "طَهُرَ",
+      "englishMeaning": "Be Pure",
+      "transliteration": "Tahura",
+      "rootWord": "ط-ه-ر",
+      "context": "Al-Baqarah 2:222",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَجِس",
+      "englishMeaning": "Impure",
+      "transliteration": "Najis",
+      "rootWord": "ن-ج-س",
+      "context": "At-Tawbah 9:28",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَلَفَ",
+      "englishMeaning": "Swear",
+      "transliteration": "Halafa",
+      "rootWord": "ح-ل-ف",
+      "context": "Al-Mujadilah 58:14",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَذَرَ",
+      "englishMeaning": "Vow",
+      "transliteration": "Nadhara",
+      "rootWord": "ن-ذ-ر",
+      "context": "Al-Baqarah 2:270",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَمّ",
+      "englishMeaning": "Paternal Uncle",
+      "transliteration": "Amm",
+      "rootWord": "ع-م-م",
+      "context": "An-Nur 24:61",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خَال",
+      "englishMeaning": "Maternal Uncle",
+      "transliteration": "Khaal",
+      "rootWord": "خ-و-ل",
+      "context": "An-Nur 24:61",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "عَمَّة",
+      "englishMeaning": "Paternal Aunt",
+      "transliteration": "Ammah",
+      "rootWord": "ع-م-م",
+      "context": "An-Nur 24:61",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "خَالَة",
+      "englishMeaning": "Maternal Aunt",
+      "transliteration": "Khaalah",
+      "rootWord": "خ-و-ل",
+      "context": "An-Nur 24:61",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَمَاة",
+      "englishMeaning": "Mother-in-law",
+      "transliteration": "Hamaah",
+      "rootWord": "ح-م-و",
+      "context": "Various",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سَيْف",
+      "englishMeaning": "Sword",
+      "transliteration": "Sayf",
+      "rootWord": "س-ي-ف",
+      "context": "Al-Hajj 22:40",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "رُمْح",
+      "englishMeaning": "Spear",
+      "transliteration": "Rumh",
+      "rootWord": "ر-م-ح",
+      "context": "Al-Maidah 5:94",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "دِرْع",
+      "englishMeaning": "Armor",
+      "transliteration": "Dir'",
+      "rootWord": "د-ر-ع",
+      "context": "Al-Anbiya 21:80",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قَوْس",
+      "englishMeaning": "Bow",
+      "transliteration": "Qaws",
+      "rootWord": "ق-و-س",
+      "context": "An-Najm 53:9",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "سَهْم",
+      "englishMeaning": "Arrow",
+      "transliteration": "Sahm",
+      "rootWord": "س-ه-م",
+      "context": "Various",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "غَزْو",
+      "englishMeaning": "Military Expedition",
+      "transliteration": "Ghazw",
+      "rootWord": "غ-ز-و",
+      "context": "At-Tawbah 9:83",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "فَتْح",
+      "englishMeaning": "Victory/Conquest",
+      "transliteration": "Fath",
+      "rootWord": "ف-ت-ح",
+      "context": "Al-Fath 48:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "نَصْر",
+      "englishMeaning": "Help/Victory",
+      "transliteration": "Nasr",
+      "rootWord": "ن-ص-ر",
+      "context": "An-Nasr 110:1",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "هَزِيمَة",
+      "englishMeaning": "Defeat",
+      "transliteration": "Hazeemah",
+      "rootWord": "ه-ز-م",
+      "context": "Al-Anfal 8:36",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "جُنْد",
+      "englishMeaning": "Army/Soldiers",
+      "transliteration": "Jund",
+      "rootWord": "ج-ن-د",
+      "context": "Ash-Shuara 26:95",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "حَارَبَ",
+      "englishMeaning": "Wage War",
+      "transliteration": "Haaraba",
+      "rootWord": "ح-ر-ب",
+      "context": "Al-Maidah 5:33",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "قَاتَلَ",
+      "englishMeaning": "Fight",
+      "transliteration": "Qaatala",
+      "rootWord": "ق-ت-ل",
+      "context": "Al-Baqarah 2:190",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "دَافَعَ",
+      "englishMeaning": "Defend",
+      "transliteration": "Daafa'a",
+      "rootWord": "د-ف-ع",
+      "context": "Al-Hajj 22:38",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "غَلَبَ",
+      "englishMeaning": "Overcome",
+      "transliteration": "Ghalaba",
+      "rootWord": "غ-ل-ب",
+      "context": "Ar-Rum 30:3",
+      "source": "quranic"
+    },
+    {
+      "arabicWord": "هَزَمَ",
+      "englishMeaning": "Defeat",
+      "transliteration": "Hazama",
+      "rootWord": "ه-ز-م",
+      "context": "Al-Baqarah 2:251",
+      "source": "quranic"
+    }
+  ]
+} 
