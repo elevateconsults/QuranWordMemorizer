@@ -10,6 +10,8 @@ import store.jaranation.quranwordmemorizer.data.local.WordDatabase
 import store.jaranation.quranwordmemorizer.notifications.QuizNotificationManager
 import store.jaranation.quranwordmemorizer.data.repository.WordRepository
 import store.jaranation.quranwordmemorizer.data.preferences.QuizPreferences
+import store.jaranation.quranwordmemorizer.ui.viewmodels.WordViewModel
+import store.jaranation.quranwordmemorizer.ui.viewmodels.WordViewModelFactory
 import java.time.LocalTime
 
 class QuizWorker(
@@ -33,35 +35,21 @@ class QuizWorker(
 
             val wordDao = WordDatabase.getDatabase(context).wordDao()
             val repository = WordRepository(wordDao)
-            
-            // Get words based on quiz source setting
-            val words = when (settings.quizSource) {
-                "quranic" -> repository.getWordsBySource("quranic").first()
-                "user" -> repository.getWordsBySource("user").first()
-                "selected" -> repository.getWordsByIds(settings.selectedWordIds)
-                else -> repository.allWords.first()
-            }
+            val factory = WordViewModelFactory(repository)
+            val wordViewModel = factory.create(WordViewModel::class.java)
+            wordViewModel.initialize()
+            val quizManager = QuizManager(wordViewModel)
 
-            if (words.isEmpty()) {
-                return@withContext Result.retry()
-            }
+            // Generate quiz based on selected source
+            val question = quizManager.generateQuiz(settings.quizSource).first()
 
-            val quizManager = QuizManager(repository)
-            val question = quizManager.generateQuestion()
+            // Show notification with the question
+            val notificationManager = QuizNotificationManager(context)
+            notificationManager.showQuizNotification(question, System.currentTimeMillis().toInt())
 
-            if (question != null) {
-                val quizNotificationManager = QuizNotificationManager(context)
-                withContext(Dispatchers.Main) {
-                    quizNotificationManager.showQuizNotification(
-                        question,
-                        System.currentTimeMillis().toInt()
-                    )
-                }
-                Result.success()
-            } else {
-                Result.retry()
-            }
+            Result.success()
         } catch (e: Exception) {
+            e.printStackTrace()
             Result.retry()
         }
     }

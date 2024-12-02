@@ -1,80 +1,57 @@
 package store.jaranation.quranwordmemorizer.quiz
 
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.map
 import store.jaranation.quranwordmemorizer.data.local.Word
-import store.jaranation.quranwordmemorizer.data.repository.WordRepository
+import store.jaranation.quranwordmemorizer.ui.viewmodels.WordViewModel
 import kotlin.random.Random
 
-enum class QuizDifficulty {
-    BEGINNER,
-    INTERMEDIATE,
-    ADVANCED
+class QuizManager(private val wordViewModel: WordViewModel) {
+
+    fun generateQuiz(quizSource: String): Flow<QuizQuestion> {
+        return wordViewModel.getRandomWords(quizSource, 3).map { words ->
+            if (words.isEmpty()) {
+                throw IllegalStateException("No words available for quiz source: $quizSource")
+            }
+            
+            // Select correct answer and generate question
+            val correctWord = words[0]
+            val questionType = QuestionType.values()[Random.nextInt(QuestionType.values().size)]
+            
+            when (questionType) {
+                QuestionType.ARABIC_TO_ENGLISH -> QuizQuestion(
+                    question = correctWord.arabicWord,
+                    correctAnswer = correctWord.englishMeaning,
+                    options = words.map { it.englishMeaning }.shuffled(),
+                    type = questionType,
+                    correctWord = correctWord,
+                    allWords = words
+                )
+                QuestionType.ENGLISH_TO_ARABIC -> QuizQuestion(
+                    question = correctWord.englishMeaning,
+                    correctAnswer = correctWord.arabicWord,
+                    options = words.map { it.arabicWord }.shuffled(),
+                    type = questionType,
+                    correctWord = correctWord,
+                    allWords = words
+                )
+            }
+        }
+    }
 }
 
 data class QuizQuestion(
-    val question: Word,
-    val options: List<String>,
+    val question: String,
     val correctAnswer: String,
-    val questionType: QuestionType,
-    val optionTransliterations: List<String>? = null
+    val options: List<String>,
+    val type: QuestionType,
+    val correctWord: Word,
+    val allWords: List<Word>
 )
 
 enum class QuestionType {
-    ARABIC_TO_ENGLISH,    // Show Arabic, guess English
-    ENGLISH_TO_ARABIC     // Show English, guess Arabic
-}
-
-class QuizManager(private val repository: WordRepository) {
-    private val maxDailyWords = 5  // Start with just 5 words per day
-    
-    suspend fun getNextQuizWord(): Word? {
-        // Get words that haven't been quizzed today
-        val words = repository.getUnquizzedWords(maxDailyWords)
-        return words.randomOrNull()
-    }
-
-    suspend fun generateQuestion(): QuizQuestion? {
-        // Get a list of words to use for the quiz
-        val correctWord = repository.getUnquizzedWords(1).firstOrNull() ?: return null
-        val wrongWords = repository.getUnquizzedWords(4)
-            .filter { it.id != correctWord.id }
-            .take(2)
-
-        // 80% chance of Arabic-to-English questions
-        val questionType = if (Random.nextFloat() < 0.8f) {
-            QuestionType.ARABIC_TO_ENGLISH
-        } else {
-            QuestionType.ENGLISH_TO_ARABIC
-        }
-            
-        val optionsWithTransliterations = when (questionType) {
-            QuestionType.ARABIC_TO_ENGLISH -> {
-                val options = (wrongWords.map { it.englishMeaning } + correctWord.englishMeaning).shuffled()
-                Pair(options, null) // No transliterations needed for English options
-            }
-            QuestionType.ENGLISH_TO_ARABIC -> {
-                // For Arabic options, we need both the words and their transliterations
-                val wordsWithTransliterations = (wrongWords + correctWord).shuffled()
-                val options = wordsWithTransliterations.map { it.arabicWord }
-                // Handle null transliterations by providing a default empty string
-                val transliterations = wordsWithTransliterations.map { it.transliteration ?: "" }
-                Pair(options, transliterations)
-            }
-        }
-
-        return QuizQuestion(
-            question = correctWord,
-            options = optionsWithTransliterations.first,
-            correctAnswer = if (questionType == QuestionType.ARABIC_TO_ENGLISH) 
-                correctWord.englishMeaning else correctWord.arabicWord,
-            questionType = questionType,
-            optionTransliterations = optionsWithTransliterations.second
-        )
-    }
-
-    private fun getAnswerBasedOnType(word: Word, type: QuestionType): String {
-        return when (type) {
-            QuestionType.ARABIC_TO_ENGLISH -> word.englishMeaning
-            QuestionType.ENGLISH_TO_ARABIC -> word.arabicWord
-        }
-    }
+    ARABIC_TO_ENGLISH,
+    ENGLISH_TO_ARABIC
 }

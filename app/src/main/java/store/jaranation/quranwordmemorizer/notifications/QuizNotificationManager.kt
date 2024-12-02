@@ -1,5 +1,6 @@
 package store.jaranation.quranwordmemorizer.notifications
 
+import android.app.Application
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -10,6 +11,7 @@ import androidx.core.app.NotificationCompat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import store.jaranation.quranwordmemorizer.quiz.QuizQuestion
 import store.jaranation.quranwordmemorizer.quiz.QuestionType
@@ -17,6 +19,10 @@ import store.jaranation.quranwordmemorizer.data.local.Word
 import store.jaranation.quranwordmemorizer.data.local.WordDatabase
 import store.jaranation.quranwordmemorizer.data.repository.WordRepository
 import store.jaranation.quranwordmemorizer.quiz.QuizManager
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import store.jaranation.quranwordmemorizer.ui.viewmodels.WordViewModel
+import store.jaranation.quranwordmemorizer.ui.viewmodels.WordViewModelFactory
 
 class QuizNotificationManager(private val context: Context) {
     private val channelId = "quiz_channel"
@@ -32,12 +38,13 @@ class QuizNotificationManager(private val context: Context) {
             try {
                 val wordDao = WordDatabase.getDatabase(context).wordDao()
                 val repository = WordRepository(wordDao)
-                val quizManager = QuizManager(repository)
+                val factory = WordViewModelFactory(repository)
+                val wordViewModel = factory.create(WordViewModel::class.java)
+                wordViewModel.initialize()
+                val quizManager = QuizManager(wordViewModel)
                 
-                val question = quizManager.generateQuestion()
-                if (question != null) {
-                    showQuizNotification(question, System.currentTimeMillis().toInt())
-                }
+                val question = quizManager.generateQuiz("both").first()
+                showQuizNotification(question, System.currentTimeMillis().toInt())
             } catch (e: Exception) {
                 e.printStackTrace()
             }
@@ -94,14 +101,8 @@ class QuizNotificationManager(private val context: Context) {
                 PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
             )
             
-            // Format the button text with transliteration for Arabic options
-            val buttonText = when (question.questionType) {
-                QuestionType.ENGLISH_TO_ARABIC -> {
-                    val transliteration = question.optionTransliterations?.getOrNull(index) ?: ""
-                    "$letter. $option ($transliteration)"
-                }
-                QuestionType.ARABIC_TO_ENGLISH -> "$letter. $option"
-            }
+            // Format the button text without transliteration
+            val buttonText = "$letter. $option"
             
             notificationBuilder.addAction(
                 NotificationCompat.Action.Builder(
@@ -145,12 +146,13 @@ class QuizNotificationManager(private val context: Context) {
                 delay(5000) // Wait 5 seconds instead of 1
                 val wordDao = WordDatabase.getDatabase(context).wordDao()
                 val repository = WordRepository(wordDao)
-                val quizManager = QuizManager(repository)
+                val factory = WordViewModelFactory(repository)
+                val wordViewModel = factory.create(WordViewModel::class.java)
+                wordViewModel.initialize()
+                val quizManager = QuizManager(wordViewModel)
                 
-                val question = quizManager.generateQuestion()
-                if (question != null) {
-                    showQuizNotification(question, notificationId + 1)
-                }
+                val question = quizManager.generateQuiz("both").first()
+                showQuizNotification(question, notificationId + 1)
             } catch (e: Exception) {
                 e.printStackTrace()
             }
@@ -158,40 +160,42 @@ class QuizNotificationManager(private val context: Context) {
     }
 
     private fun getCollapsedQuestionText(question: QuizQuestion): String {
-        return when (question.questionType) {
-            QuestionType.ARABIC_TO_ENGLISH -> {
-                "${question.question.arabicWord} (${question.question.transliteration})"
-            }
-            QuestionType.ENGLISH_TO_ARABIC -> {
-                "What is the Arabic word for: ${question.question.englishMeaning}?"
-            }
-        }
+        return "What is the ${if (question.type == QuestionType.ARABIC_TO_ENGLISH) "English meaning" else "Arabic word"} for '${question.question}'?"
     }
 
     private fun getExpandedQuizText(question: QuizQuestion): String {
-        val questionText = when (question.questionType) {
-            QuestionType.ARABIC_TO_ENGLISH -> "What does this word mean?\n\n" +
-                "${question.question.arabicWord}\n" +
-                "(${question.question.transliteration})\n\n" +
-                "Choose your answer:\n\n"
-            QuestionType.ENGLISH_TO_ARABIC -> "What is the Arabic word for:\n\n" +
-                "${question.question.englishMeaning}\n\n" +
-                "Choose your answer:\n\n"
-        }
-
-        val options = question.options.mapIndexed { index, option ->
-            val optionText = when (question.questionType) {
-                QuestionType.ENGLISH_TO_ARABIC -> {
-                    // For Arabic options, include transliteration
-                    val transliteration = question.optionTransliterations?.getOrNull(index) ?: ""
-                    "$option ($transliteration)"
-                }
-                QuestionType.ARABIC_TO_ENGLISH -> option
+        val questionText = when (question.type) {
+            QuestionType.ARABIC_TO_ENGLISH -> {
+                // For Arabic question, include transliteration
+                val transliteration = question.correctWord.transliteration
+                "What is the English meaning for '${question.question}' (${transliteration ?: ""})?"
             }
-            "${('A' + index)}. $optionText"
+            QuestionType.ENGLISH_TO_ARABIC -> {
+                "What is the Arabic word for '${question.question}'?"
+            }
+        }
+        
+        val optionsText = question.options.mapIndexed { index, option ->
+            val letter = ('A' + index)
+            when (question.type) {
+                QuestionType.ENGLISH_TO_ARABIC -> {
+                    // For Arabic options, include only transliteration
+                    val word = if (option == question.correctWord.arabicWord) {
+                        question.correctWord
+                    } else {
+                        // Find the word from the original list that matches this option
+                        question.allWords.find { it.arabicWord == option }
+                    }
+                    val transliteration = word?.transliteration ?: ""
+                    "$letter. $option (${transliteration})"
+                }
+                QuestionType.ARABIC_TO_ENGLISH -> {
+                    "$letter. $option"
+                }
+            }
         }.joinToString("\n")
-
-        return questionText + options
+        
+        return "$questionText\n\n$optionsText"
     }
 
     fun showFeedbackNotification(isCorrect: Boolean, answer: String, notificationId: Int) {

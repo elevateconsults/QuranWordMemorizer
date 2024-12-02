@@ -26,7 +26,7 @@ class QuizPreferences(private val context: Context) {
         QuizSettings(
             isNotificationEnabled = preferences[PreferencesKeys.NOTIFICATION_ENABLED] ?: true,
             notificationFrequency = preferences[PreferencesKeys.NOTIFICATION_FREQUENCY] ?: 4,
-            quizSource = preferences[PreferencesKeys.QUIZ_SOURCE] ?: "both",
+            quizSource = preferences[PreferencesKeys.QUIZ_SOURCE] ?: "user",
             startTime = preferences[PreferencesKeys.START_TIME] ?: 8,
             endTime = preferences[PreferencesKeys.END_TIME] ?: 22,
             selectedWordIds = preferences[PreferencesKeys.SELECTED_WORD_IDS]?.split(",")
@@ -79,4 +79,4 @@ class QuizPreferences(private val context: Context) {
             preferences[PreferencesKeys.TEST_MODE] = enabled
         }
     }
-} 
+}
