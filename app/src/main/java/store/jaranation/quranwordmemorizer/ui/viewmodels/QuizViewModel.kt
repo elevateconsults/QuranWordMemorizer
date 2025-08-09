@@ -15,12 +15,15 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import store.jaranation.quranwordmemorizer.data.preferences.QuizPreferences
+import store.jaranation.quranwordmemorizer.data.preferences.QuizPreferences
 import store.jaranation.quranwordmemorizer.quiz.QuizDifficulty
 import store.jaranation.quranwordmemorizer.quiz.QuizManager
 import store.jaranation.quranwordmemorizer.quiz.QuizQuestion
+import store.jaranation.quranwordmemorizer.quiz.QuestionType
 
 data class QuizState(
     val currentQuestion: QuizQuestion? = null,
+    val questionText: String = "",
     val isAnswered: Boolean = false,
     val isCorrect: Boolean = false,
     val correctAnswers: Int = 0,
@@ -59,8 +62,15 @@ class QuizViewModel(
             val difficulty = QuizDifficulty.valueOf(settings.quizDifficulty)
             val question = quizManager.generateQuestion(difficulty)
 
+            val questionText = when (question?.questionType) {
+                QuestionType.ARABIC_TO_ENGLISH -> question.question.arabicWord
+                QuestionType.ENGLISH_TO_ARABIC -> question.question.englishMeaning
+                null -> ""
+            }
+
             _quizState.value = _quizState.value.copy(
                 currentQuestion = question,
+                questionText = questionText,
                 isAnswered = false,
                 isLoading = false
             )

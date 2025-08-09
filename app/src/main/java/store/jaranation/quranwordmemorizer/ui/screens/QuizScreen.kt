@@ -70,11 +70,6 @@ fun QuizScreen(
                 Text("No more questions available for now.")
             } else {
                 quizState.currentQuestion?.let { q ->
-                    val questionText = when (q.questionType) {
-                        QuestionType.ARABIC_TO_ENGLISH -> q.question.arabicWord
-                        QuestionType.ENGLISH_TO_ARABIC -> q.question.englishMeaning
-                    }
-
                     // Question display
                     Card(
                         modifier = Modifier.fillMaxWidth(),
@@ -89,7 +84,7 @@ fun QuizScreen(
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Text(
-                                text = questionText,
+                                text = quizState.questionText,
                                 style = MaterialTheme.typography.headlineLarge,
                                 textAlign = TextAlign.Center
                             )
