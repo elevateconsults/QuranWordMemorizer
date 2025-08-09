@@ -32,12 +32,21 @@ class QuizManager(private val repository: WordRepository) {
         return words.randomOrNull()
     }
 
-    suspend fun generateQuestion(): QuizQuestion? {
-        // Get a list of words to use for the quiz
-        val correctWord = repository.getUnquizzedWords(1).firstOrNull() ?: return null
-        val wrongWords = repository.getUnquizzedWords(4)
-            .filter { it.id != correctWord.id }
-            .take(2)
+    suspend fun generateQuestion(difficulty: QuizDifficulty): QuizQuestion? {
+        val numWrongWords = when (difficulty) {
+            QuizDifficulty.BEGINNER -> 1
+            QuizDifficulty.INTERMEDIATE -> 2
+            QuizDifficulty.ADVANCED -> 3
+        }
+
+        // We need at least one correct word and enough wrong words
+        val totalWordsNeeded = numWrongWords + 1
+        val availableWords = repository.getUnquizzedWords(totalWordsNeeded * 2) // Fetch extra to be safe
+
+        if (availableWords.size < totalWordsNeeded) return null
+
+        val correctWord = availableWords.first()
+        val wrongWords = availableWords.drop(1).take(numWrongWords)
 
         // 80% chance of Arabic-to-English questions
         val questionType = if (Random.nextFloat() < 0.8f) {

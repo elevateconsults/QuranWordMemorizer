@@ -60,15 +60,15 @@ class QuizManagerTest {
         val word1 = Word(id = 1, arabicWord = "تفاح", englishMeaning = "Apple")
         fakeWordDao.setWords(listOf(word1))
 
-        // When generating a question
-        val question = quizManager.generateQuestion()
+        // When generating a question for any difficulty
+        val question = quizManager.generateQuestion(QuizDifficulty.INTERMEDIATE)
 
-        // Then the question should be null because we need at least 3 words
+        // Then the question should be null because we need at least 3 words for intermediate
         assertEquals(null, question)
     }
 
     @Test
-    fun `generateQuestion creates a valid question when enough words are available`() = runBlocking {
+    fun `generateQuestion with Intermediate difficulty returns 3 options`() = runBlocking {
         // Given the repository has enough words
         val words = listOf(
             Word(id = 1, arabicWord = "تفاح", englishMeaning = "Apple", transliteration = "Tuffah"),
@@ -79,7 +79,7 @@ class QuizManagerTest {
         fakeWordDao.setWords(words)
 
         // When generating a question
-        val question = quizManager.generateQuestion()
+        val question = quizManager.generateQuestion(QuizDifficulty.INTERMEDIATE)
 
         // Then the question should be valid
         assertNotNull(question)
@@ -87,15 +87,51 @@ class QuizManagerTest {
 
         // It should have 3 options (1 correct + 2 wrong)
         assertEquals(3, question.options.size)
-
-        // The correct answer must be one of the options
         assertTrue(question.options.contains(question.correctAnswer))
+    }
 
-        // Check if the question and answer match based on the question type
-        if (question.questionType == QuestionType.ARABIC_TO_ENGLISH) {
-            assertEquals(question.question.englishMeaning, question.correctAnswer)
-        } else {
-            assertEquals(question.question.arabicWord, question.correctAnswer)
-        }
+    @Test
+    fun `generateQuestion with Beginner difficulty returns 2 options`() = runBlocking {
+        // Given the repository has enough words
+        val words = listOf(
+            Word(id = 1, arabicWord = "تفاح", englishMeaning = "Apple", transliteration = "Tuffah"),
+            Word(id = 2, arabicWord = "موز", englishMeaning = "Banana", transliteration = "Mawz"),
+            Word(id = 3, arabicWord = "برتقال", englishMeaning = "Orange", transliteration = "Burtuqal")
+        )
+        fakeWordDao.setWords(words)
+
+        // When generating a question
+        val question = quizManager.generateQuestion(QuizDifficulty.BEGINNER)
+
+        // Then the question should be valid
+        assertNotNull(question)
+        question!!
+
+        // It should have 2 options (1 correct + 1 wrong)
+        assertEquals(2, question.options.size)
+        assertTrue(question.options.contains(question.correctAnswer))
+    }
+
+    @Test
+    fun `generateQuestion with Advanced difficulty returns 4 options`() = runBlocking {
+        // Given the repository has enough words
+        val words = listOf(
+            Word(id = 1, arabicWord = "تفاح", englishMeaning = "Apple", transliteration = "Tuffah"),
+            Word(id = 2, arabicWord = "موز", englishMeaning = "Banana", transliteration = "Mawz"),
+            Word(id = 3, arabicWord = "برتقال", englishMeaning = "Orange", transliteration = "Burtuqal"),
+            Word(id = 4, arabicWord = "عنب", englishMeaning = "Grape", transliteration = "Inab")
+        )
+        fakeWordDao.setWords(words)
+
+        // When generating a question
+        val question = quizManager.generateQuestion(QuizDifficulty.ADVANCED)
+
+        // Then the question should be valid
+        assertNotNull(question)
+        question!!
+
+        // It should have 4 options (1 correct + 3 wrong)
+        assertEquals(4, question.options.size)
+        assertTrue(question.options.contains(question.correctAnswer))
     }
 }

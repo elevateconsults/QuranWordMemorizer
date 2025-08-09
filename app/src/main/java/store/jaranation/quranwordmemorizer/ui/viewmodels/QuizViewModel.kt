@@ -8,48 +8,42 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
-import store.jaranation.quranwordmemorizer.data.local.Word
-import store.jaranation.quranwordmemorizer.data.local.WordDatabase
-import store.jaranation.quranwordmemorizer.data.repository.WordRepository
+import androidx.lifecycle.ViewModel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
+import store.jaranation.quranwordmemorizer.data.preferences.QuizPreferences
+import store.jaranation.quranwordmemorizer.quiz.QuizDifficulty
+import store.jaranation.quranwordmemorizer.quiz.QuizManager
+import store.jaranation.quranwordmemorizer.quiz.QuizQuestion
 
 data class QuizState(
-    val currentWord: Word? = null,
-    val options: List<String> = emptyList(),
+    val currentQuestion: QuizQuestion? = null,
     val isAnswered: Boolean = false,
     val isCorrect: Boolean = false,
     val correctAnswers: Int = 0,
-    val totalAttempts: Int = 0
+    val totalAttempts: Int = 0,
+    val isLoading: Boolean = true
 )
 
-class QuizViewModel(application: Application) : AndroidViewModel(application) {
-    private val repository = WordRepository(WordDatabase.getDatabase(application).wordDao())
-    private val words = mutableListOf<Word>()
-    
+class QuizViewModel(
+    private val quizManager: QuizManager,
+    private val quizPreferences: QuizPreferences
+) : ViewModel() {
+
     private val _quizState = MutableStateFlow(QuizState())
     val quizState: StateFlow<QuizState> = _quizState.asStateFlow()
-    
+
     init {
-        loadWords()
+        loadNextQuestion()
     }
-    
-    private fun loadWords() {
-        viewModelScope.launch {
-            try {
-                words.clear()
-                words.addAll(repository.allWords.first())
-                if (words.isNotEmpty()) {
-                    nextQuestion()
-                }
-            } catch (e: Exception) {
-                // Handle error
-            }
-        }
-    }
-    
+
     fun checkAnswer(selectedAnswer: String) {
         val currentState = _quizState.value
-        val isCorrect = currentState.currentWord?.englishMeaning == selectedAnswer
-        
+        val isCorrect = currentState.currentQuestion?.correctAnswer == selectedAnswer
+
         _quizState.value = currentState.copy(
             isAnswered = true,
             isCorrect = isCorrect,
@@ -57,25 +51,19 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             totalAttempts = currentState.totalAttempts + 1
         )
     }
-    
-    fun nextQuestion() {
-        if (words.isEmpty()) {
-            return
+
+    fun loadNextQuestion() {
+        viewModelScope.launch {
+            _quizState.value = _quizState.value.copy(isLoading = true)
+            val settings = quizPreferences.quizSettings.first()
+            val difficulty = QuizDifficulty.valueOf(settings.quizDifficulty)
+            val question = quizManager.generateQuestion(difficulty)
+
+            _quizState.value = _quizState.value.copy(
+                currentQuestion = question,
+                isAnswered = false,
+                isLoading = false
+            )
         }
-        
-        val currentWord = words.random()
-        val wrongOptions = words
-            .filter { it != currentWord }
-            .shuffled()
-            .take(3)
-            .map { it.englishMeaning }
-        
-        val options = (wrongOptions + currentWord.englishMeaning).shuffled()
-        
-        _quizState.value = _quizState.value.copy(
-            currentWord = currentWord,
-            options = options,
-            isAnswered = false
-        )
     }
 } 

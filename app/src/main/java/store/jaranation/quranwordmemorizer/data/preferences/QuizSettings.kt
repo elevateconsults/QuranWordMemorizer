@@ -10,5 +10,6 @@ data class QuizSettings(
     val quizDuration: Int = 7, // days to quiz on selected words
     val minInterval: Int = 10, // minimum minutes between notifications
     val maxDailyQuizzes: Int = 10, // maximum quizzes per day
-    val isTestMode: Boolean = false // Add this for testing
+    val isTestMode: Boolean = false, // Add this for testing
+    val quizDifficulty: String = "BEGINNER"
 ) 

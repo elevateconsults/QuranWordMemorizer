@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.lifecycle.viewmodel.compose.viewModel
 import store.jaranation.quranwordmemorizer.data.preferences.QuizSettings
+import store.jaranation.quranwordmemorizer.quiz.QuizDifficulty
 import store.jaranation.quranwordmemorizer.ui.viewmodels.SettingsViewModel
 import store.jaranation.quranwordmemorizer.ui.components.TimePickerDialog
 import store.jaranation.quranwordmemorizer.ui.components.TimeSelector
@@ -105,6 +106,42 @@ fun SettingsScreen(
                                 description = "Quiz from both Quranic and your words",
                                 selected = settings.quizSource == "both",
                                 onClick = { viewModel.updateQuizSource("both") }
+                            )
+                        }
+                    }
+                }
+
+                // Quiz Difficulty Selection
+                Card {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp)
+                    ) {
+                        Text(
+                            text = "Quiz Difficulty",
+                            style = MaterialTheme.typography.titleMedium
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+
+                        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                            QuizSourceOption(
+                                title = "Beginner",
+                                description = "Fewer options per question",
+                                selected = settings.quizDifficulty == QuizDifficulty.BEGINNER.name,
+                                onClick = { viewModel.updateQuizDifficulty(QuizDifficulty.BEGINNER.name) }
+                            )
+                            QuizSourceOption(
+                                title = "Intermediate",
+                                description = "A moderate number of options",
+                                selected = settings.quizDifficulty == QuizDifficulty.INTERMEDIATE.name,
+                                onClick = { viewModel.updateQuizDifficulty(QuizDifficulty.INTERMEDIATE.name) }
+                            )
+                            QuizSourceOption(
+                                title = "Advanced",
+                                description = "More options for a greater challenge",
+                                selected = settings.quizDifficulty == QuizDifficulty.ADVANCED.name,
+                                onClick = { viewModel.updateQuizDifficulty(QuizDifficulty.ADVANCED.name) }
                             )
                         }
                     }

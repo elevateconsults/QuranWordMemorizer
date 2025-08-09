@@ -20,6 +20,7 @@ class QuizPreferences(private val context: Context) {
         val SELECTED_WORD_IDS = stringPreferencesKey("selected_word_ids")
         val QUIZ_DURATION = intPreferencesKey("quiz_duration")
         val TEST_MODE = booleanPreferencesKey("test_mode")
+        val QUIZ_DIFFICULTY = stringPreferencesKey("quiz_difficulty")
     }
 
     val quizSettings: Flow<QuizSettings> = context.dataStore.data.map { preferences ->
@@ -33,8 +34,15 @@ class QuizPreferences(private val context: Context) {
                 ?.mapNotNull { it.toIntOrNull() }
                 ?.toSet() ?: emptySet(),
             quizDuration = preferences[PreferencesKeys.QUIZ_DURATION] ?: 7,
-            isTestMode = preferences[PreferencesKeys.TEST_MODE] ?: false
+            isTestMode = preferences[PreferencesKeys.TEST_MODE] ?: false,
+            quizDifficulty = preferences[PreferencesKeys.QUIZ_DIFFICULTY] ?: "BEGINNER"
         )
+    }
+
+    suspend fun updateQuizDifficulty(difficulty: String) {
+        context.dataStore.edit { preferences ->
+            preferences[PreferencesKeys.QUIZ_DIFFICULTY] = difficulty
+        }
     }
 
     suspend fun updateNotificationEnabled(enabled: Boolean) {

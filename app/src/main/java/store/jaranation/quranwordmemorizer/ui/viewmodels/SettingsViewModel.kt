@@ -55,6 +55,12 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
         }
     }
 
+    fun updateQuizDifficulty(difficulty: String) {
+        viewModelScope.launch {
+            preferences.updateQuizDifficulty(difficulty)
+        }
+    }
+
     fun updateTimeRange(startHour: Int, endHour: Int) {
         viewModelScope.launch {
             preferences.updateTimeRange(startHour, endHour)
