@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "QuranWordMemorizer"
 include(":app")
+include(":quranmemorizerplus")
  

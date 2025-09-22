@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "store.jaranation.quranwordmemorizer"
+    namespace = "store.jaranation.qwm2"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "store.jaranation.quranwordmemorizer"
+        applicationId = "store.jaranation.qwm2"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -20,25 +20,6 @@ android {
         ksp {
             arg("room.schemaLocation", "$projectDir/schemas")
             arg("room.incremental", "true")
-            arg("room.expandProjection", "true")
-        }
-    }
-
-    // Optional signing configuration for CI release builds.
-    // Provide a properties file path via -PsigningPropsFile that contains:
-    // RELEASE_STORE_FILE, RELEASE_STORE_PASSWORD, RELEASE_KEY_ALIAS, RELEASE_KEY_PASSWORD
-    val signingPropsPath = project.findProperty("signingPropsFile") as String?
-    val hasSigning = signingPropsPath != null && file(signingPropsPath!!).exists()
-    if (hasSigning) {
-        val props = java.util.Properties()
-        file(signingPropsPath!!).inputStream().use { props.load(it) }
-        signingConfigs {
-            create("release") {
-                storeFile = file(props.getProperty("RELEASE_STORE_FILE"))
-                storePassword = props.getProperty("RELEASE_STORE_PASSWORD")
-                keyAlias = props.getProperty("RELEASE_KEY_ALIAS")
-                keyPassword = props.getProperty("RELEASE_KEY_PASSWORD")
-            }
         }
     }
 
@@ -49,9 +30,10 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            if (hasSigning) {
-                signingConfig = signingConfigs.getByName("release")
-            }
+        }
+        debug {
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-debug"
         }
     }
     compileOptions {
@@ -64,9 +46,13 @@ android {
     buildFeatures {
         compose = true
     }
-    
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
+    }
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }
 
@@ -75,38 +61,28 @@ dependencies {
     implementation(composeBom)
     androidTestImplementation(composeBom)
 
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("androidx.activity:activity-compose:1.8.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
-    implementation("androidx.compose.material:material-icons-core")
-    implementation("androidx.compose.material:material-icons-extended")
-    
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation("androidx.activity:activity-compose:1.8.1")
     implementation("androidx.navigation:navigation-compose:2.7.5")
-    
+
+    // Room
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
-    
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
-    
-    implementation("com.google.code.gson:gson:2.10.1")
-    
+
     // WorkManager
     implementation("androidx.work:work-runtime-ktx:2.9.0")
-    
-    // DataStore
-    implementation("androidx.datastore:datastore-preferences:1.0.0")
 
-    // Debug
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-    // Testing
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
